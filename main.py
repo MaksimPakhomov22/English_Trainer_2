@@ -46,7 +46,7 @@ work_dict = hards[user_input.lower().title().strip()]
 
 for key, item in work_dict.items():
     print(f"{key}, {len(item)} букв, начинается на {item[0]}")
-    answer_input = input()
+    answer_input = input().strip().lower()
     if answer_input == item:
         answers[key] = True
         correct_answers += 1
